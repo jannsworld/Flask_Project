@@ -1,0 +1,23 @@
+#main{
+    /* background-color: whitesmoke; */
+    background-color: white;
+    width : 80%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+p{
+    font-size: 20px ;
+    margin-top: 20px;
+}
+
+.container #main .btn{
+    background-color: white;
+    color: skyblue;
+    border: 3px solid rgb(210, 233, 248);
+}
+
+.container #main .btn:hover{
+    background-color: lightskyblue;
+    color: white;
+}

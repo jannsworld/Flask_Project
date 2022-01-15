@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>너 자신을 알라 소크라테스트</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/default.css">
+  <link rel="stylesheet" href="../static/css/test.css">
+  <link rel="stylesheet" href="../static/css/animation.css">
+
+   <!--favicon-->
+  <link rel="shortcut icon" href="../static/img/favicon.ico">
+</head>
+
+<body>
+   <form action="/test" method="POST">
+  <div class="container">
+    <section id = "qna_text" class = "mx-auto my-5 pb-5 px-3">
+      <h2 class = "pt-5">너 자신을 알라 소크라테스트</h2>
+      <div class="status mx-auto mt-5">
+        <div class="statusBar"></div>
+      </div>
+      <div class="qBox my-5 mx-auto">
+        1. 최근 일주일 간 아침에 일어났을 때 나의 마음은?
+      </div>
+      <div class = "col-lg-6 col-md-8 col-sm-10 col-12 mx-auto" id = "Q_Img">
+        <img src = "../static/img/Q1.png" alt = "1" class = "img-fluid" >
+      </div>
+      <div class="answer">
+        <input type="text" name="answer" class="col-lg-6 col-md-8 col-sm-10 col-12 my-3 mx-auto">
+      </div>
+      <button type="button" class="btn" onclick = "js:goNextQ()">
+        <span class="material-icons">
+          <!-- arrow_forward -->
+          forward
+        </span>
+      </button>
+    </section>
+  </div>
+   </form>
+</body>
+
+  <!-- javascript -->
+  <script src = "../static/js/data.js" charset="utf-8"></script>
+  <script src = "../static/js/test.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      var status = document.querySelector('.statusBar');
+      status.style.width = (100/6) * (2)+ '%';
+    });
+  </script>
+
+  <script type="text/javascript">
+  function move_result(){
+    window.location.href = "./result";
+  }
+  </script>
+
+</html>
